@@ -10,13 +10,7 @@ EMAIL_USER = os.getenv("EMAIL_USER")
 
 def send_email(to_email, subject, body):
 
-    if not SENDGRID_API_KEY:
-        print("❌ SENDGRID API KEY MISSING")
-        return
-
-    print("📧 SENDING EMAIL VIA SENDGRID...")
-    print("FROM:", EMAIL_USER)
-    print("TO:", to_email)
+    print("🔥 SENDGRID FUNCTION STARTED")
 
     data = {
         "personalizations": [
@@ -36,7 +30,7 @@ Thank you for reaching out.
 
 {body}
 
-Best regards,  
+Best regards,
 Your Company
 """
             }
@@ -52,6 +46,9 @@ Your Company
         json=data
     )
 
+    # 👇 DEBUG HERE
+    print("📧 SENDGRID RESPONSE STATUS:", response.status_code)
+    print("📧 SENDGRID RESPONSE BODY:", response.text)
     print("STATUS CODE:", response.status_code)
 
     if response.status_code == 202:
