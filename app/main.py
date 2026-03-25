@@ -62,7 +62,7 @@ def create_lead(
 
     print("🚀 ADDING BACKGROUND TASK")  # 👈 ADD THIS TOO
 
-    background_tasks.add_task(trigger_actions, new_lead)
+    trigger_actions(new_lead)
 
     return new_lead
 
