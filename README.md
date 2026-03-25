@@ -7,7 +7,7 @@ AI-powered lead automation system that classifies inbound leads, triggers automa
 ## 🌍 Live Demo
 
 - 🔗 **API (FastAPI):** https://ai-lead-automation-system.onrender.com
-- 📊 **Dashboard (Streamlit):** (add your Streamlit link later)
+- 📊 **Dashboard (Streamlit):** https://ai-lead-automation-system.streamlit.app/
 
 ---
 
