@@ -84,7 +84,7 @@ GET /leads/
 
 ---
 
-📊 Dashboard Features
+## 📊 Dashboard Features
 Submit new leads
 View all stored leads
 Analyze lead distribution (HOT / WARM / COLD)
@@ -92,7 +92,7 @@ Real-time updates from backend API
 
 ---
 
-🔐 Environment Variables
+## 🔐 Environment Variables
 
 Create a .env file:
   SENDGRID_API_KEY=your_sendgrid_key
@@ -101,7 +101,7 @@ Create a .env file:
 
 ---
 
-▶️ Run Locally
+## ▶️ Run Locally
 Backend
   uvicorn app.main:app --reload
 
@@ -110,14 +110,14 @@ Frontend
 
 ---
 
-🚀 Deployment
+## 🚀 Deployment
 Backend deployed on Render
 Frontend deployed on Streamlit Cloud
 Environment variables securely managed in production
 
 ---
 
-🧠 Key Learnings
+## 🧠 Key Learnings
 Production debugging (API, async tasks, env variables)
 External API integration (SendGrid, OpenAI)
 Full-stack system design
@@ -126,7 +126,7 @@ Real-time data pipelines
 
 ---
 
-🎯 Use Case
+## 🎯 Use Case
 
 This system can be used by:
 
@@ -137,7 +137,7 @@ Sales teams needing automation
 
 ---
 
-🎯 Use Case
+## 🎯 Use Case
 
 This system can be used by:
 
@@ -148,7 +148,7 @@ Sales teams needing automation
 
 ---
 
-👤 Author
+## 👤 Author
 
 Akpor Unukogbon
 
