@@ -6,7 +6,6 @@ from .schemas import LeadCreate
 from .ai import process_lead
 from .automation import trigger_actions
 
-# 👇 IMPORT HERE (top of file is best practice)
 from fastapi.middleware.cors import CORSMiddleware
 
 
@@ -44,7 +43,7 @@ def create_lead(
     db: Session = Depends(get_db)
 ):
     
-    print("🚀 CREATE LEAD ENDPOINT HIT")  # 👈 ADD THIS LINE
+    print("🚀 CREATE LEAD ENDPOINT HIT")  
 
     ai_result = process_lead(lead.message)
 
