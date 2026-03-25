@@ -44,6 +44,8 @@ def create_lead(
     db: Session = Depends(get_db)
 ):
     
+    print("🚀 CREATE LEAD ENDPOINT HIT")  # 👈 ADD THIS LINE
+
     ai_result = process_lead(lead.message)
 
     new_lead = Lead(
@@ -59,7 +61,8 @@ def create_lead(
     db.commit()
     db.refresh(new_lead)
 
-    # 🔥 Background automation
+    print("🚀 ADDING BACKGROUND TASK")  # 👈 ADD THIS TOO
+
     background_tasks.add_task(trigger_actions, new_lead)
 
     return new_lead
